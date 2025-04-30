@@ -12,55 +12,47 @@ import circleR from "../../../Assets/images/circleR.png";
 interface itemsPrpos {
   itemNode: any;
 }
-
 export const items: itemsPrpos[] = [
   {
     itemNode: (
-      <>
-        <motion.div
-          className={`bg-[#298883] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2`}
-          whileHover="hover"
-          initial="rest"
-          animate="rest"
-        >
-          <h3 className="text-white font-semibold text-left p-2">
-            Managing packages and subscriptions
-          </h3>
-          <div className="relative w-full h-full">
-            <motion.img
-              src={card1}
-              className={`absolute top-10 right-0 ease-out duration-[1500ms] mt-[20px] -mr-2 w-24`}
-              // variants={{
-              //   rest: { scale: 1, rotate: 0, marginLeft: 0 },
-              //   hover: { scale: 1.3, rotate: 45, marginLeft: 10 },
-              // }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            />
-          </div>
-        </motion.div>
-      </>
+      <motion.div
+        className="bg-[#298883] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2"
+        whileHover="hover"
+        initial="rest"
+        animate="rest"
+      >
+        <h3 dir="rtl" className="text-white font-semibold text-right p-2">
+          خدمات الفيزا وتنظيم الرحلات للمستثمرين
+        </h3>
+        <div className="relative w-full h-full">
+          <motion.img
+            src={card1}
+            className="absolute top-10 right-0 ease-out duration-[1500ms] mt-[20px] -mr-2 w-24"
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          />
+        </div>
+      </motion.div>
     ),
   },
   {
     itemNode: (
       <motion.div
-        className={`bg-[#0045B2] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2`}
+        className="bg-[#0045B2] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2"
         whileHover="hover"
         initial="rest"
         animate="rest"
       >
         <motion.h3
-          variants={{
-            hover: { scale: 1.1 },
-          }}
-          className="text-white font-semibold text-left p-2 ease-out duration-[700ms]"
+          dir="rtl"
+          className="text-white font-semibold text-right p-2 ease-out duration-[700ms]"
+          variants={{ hover: { scale: 1.1 } }}
         >
-          Comprehensive control panel
+          حلول الإقامة والنقل داخل سوريا
         </motion.h3>
         <div className="relative w-full h-full">
           <motion.img
             src={circleW}
-            className={`absolute right-0 ease-out duration-[700ms] mt-[20px] mr-7 w-16`}
+            className="absolute right-0 ease-out duration-[700ms] mt-[20px] mr-7 w-16"
             variants={{
               rest: { scale: 1, rotate: 0, marginRight: "28px", top: "60px" },
               hover: {
@@ -74,8 +66,7 @@ export const items: itemsPrpos[] = [
           />
           <motion.img
             src={circleR}
-            //className={`absolute right-0 ease-out duration-[700ms] mt-[40px] -mr-2 w-10`}
-            className={`absolute right-0 ease-out duration-[700ms] mt-[20px] -mr-2 w-8`}
+            className="absolute right-0 ease-out duration-[700ms] mt-[20px] -mr-2 w-8"
             variants={{
               rest: { scale: 1, marginRight: "-8px", rotate: 0, top: "56px" },
               hover: {
@@ -89,14 +80,9 @@ export const items: itemsPrpos[] = [
           />
           <motion.img
             src={circleB}
-            className={`absolute right-0 ease-out duration-[700ms] mt-[40px] -mr-2 w-10`}
+            className="absolute right-0 ease-out duration-[700ms] mt-[40px] -mr-2 w-10"
             variants={{
               rest: { scale: 1, top: "72px" },
-              // hover: {
-              //   scale: 1.1,
-              //   marginRight: "-4px",
-              //   top: "70px",
-              // },
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           />
@@ -107,24 +93,22 @@ export const items: itemsPrpos[] = [
   {
     itemNode: (
       <motion.div
+        className="bg-[#9978E0] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2"
         whileHover="hover"
         initial="rest"
         animate="rest"
-        className={`bg-[#9978E0] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2`}
-        //className={`${slide.color} ease-in duration-300 rounded-lg w-[220px] lg:w-[220px] sm:w-40  h-56 m-2 p-2 `}
       >
         <motion.h3
-          variants={{
-            hover: { scale: 1.1 },
-          }}
-          className="text-white font-semibold text-left p-2 ease-out duration-[700ms] transition-transform"
+          dir="rtl"
+          className="text-white font-semibold text-right p-2 ease-out duration-[700ms] transition-transform"
+          variants={{ hover: { scale: 1.1 } }}
         >
-          Managing social media accounts
+          استخراج التراخيص والدعم القانوني
         </motion.h3>
         <div className="relative w-full h-full">
           <motion.img
             src={card3}
-            className={`absolute right-0 ease-out duration-[700ms] mt-[20px] -mr-2 w-24`}
+            className="absolute right-0 ease-out duration-[700ms] mt-[20px] -mr-2 w-24"
             variants={{
               rest: { scale: 1, rotate: 0, marginRight: "-8px", top: "56px" },
               hover: {
@@ -142,61 +126,52 @@ export const items: itemsPrpos[] = [
   },
   {
     itemNode: (
-      <>
-        <motion.div
-          className={`bg-[#8EA8CF] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2`}
-          whileHover="hover"
-          initial="rest"
-          animate="rest"
+      <motion.div
+        className="bg-[#8EA8CF] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2"
+        whileHover="hover"
+        initial="rest"
+        animate="rest"
+      >
+        <motion.h3
+          dir="rtl"
+          className="text-white font-semibold text-right p-2 ease-out duration-[700ms]"
+          variants={{ hover: { scale: 1.1 } }}
         >
-          <motion.h3
+          إعداد دراسات الجدوى وتحليل المخاطر
+        </motion.h3>
+        <div className="relative w-full h-full">
+          <motion.img
+            src={card4}
+            className="absolute right-0 ease-out duration-[700ms] mt-[20px] -mr-2 w-24"
             variants={{
-              hover: { scale: 1.1 },
+              rest: { scale: 1, marginRight: "-8px", top: "40px" },
+              hover: { scale: 1.3, marginRight: "7px", top: "29px" },
             }}
-            className="text-white ease-out duration-[700ms] font-semibold text-left p-2"
-          >
-            Search engine optimizations (SEO) and scheduling{" "}
-          </motion.h3>
-          <div className="relative w-full h-full">
-            <motion.img
-              src={card4}
-              className={`absolute right-0 ease-out duration-[700ms] mt-[20px] -mr-2 w-24`}
-              variants={{
-                rest: { scale: 1, marginRight: "-8px", top: "40px" },
-                hover: { scale: 1.3, marginRight: "7px", top: "29px" },
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            />
-          </div>
-        </motion.div>
-      </>
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          />
+        </div>
+      </motion.div>
     ),
   },
   {
     itemNode: (
-      <>
-        <motion.div
-          className={`bg-[#B238E1] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2`}
-          whileHover="hover"
-          initial="rest"
-          animate="rest"
-        >
-          <h3 className="text-white font-semibold text-left p-2">
-            Create personal profile and generate QR
-          </h3>
-          <div className="relative w-full h-full">
-            <motion.img
-              src={card5}
-              className={`absolute top-10 right-0 ease-out duration-[1500ms] mt-[20px] -mr-2 w-24`}
-              // variants={{
-              //   rest: { scale: 1, rotate: 0, marginLeft: 0 },
-              //   hover: { scale: 1.3, rotate: 45, marginLeft: 10 },
-              // }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            />
-          </div>
-        </motion.div>
-      </>
+      <motion.div
+        className="bg-[#B238E1] ease-in duration-300 rounded-lg w-[215px] h-56 m-2 p-2"
+        whileHover="hover"
+        initial="rest"
+        animate="rest"
+      >
+        <h3 dir="rtl" className="text-white font-semibold text-right p-2">
+          تأمين كوادر وتقديم برامج تدريبية متخصصة
+        </h3>
+        <div className="relative w-full h-full">
+          <motion.img
+            src={card5}
+            className="absolute top-10 right-0 ease-out duration-[1500ms] mt-[20px] -mr-2 w-24"
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          />
+        </div>
+      </motion.div>
     ),
   },
 ];

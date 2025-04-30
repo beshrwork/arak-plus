@@ -67,11 +67,16 @@ const Header = () => {
               className="block sm:inline hover:underline py-2 sm:py-0"
               onClick={() => setIsOpen(false)}
             >
-              Our Services
+              خدماتنا
+            </a>
+            <a
+              href="#our-services"
+              className="block sm:inline hover:underline py-2 sm:py-0"
+              onClick={() => setIsOpen(false)}
+            >
+              من نحن
             </a>
           </nav>
-
-          
         </header>
       </div>
 

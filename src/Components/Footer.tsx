@@ -1,4 +1,4 @@
-import Logo from "../Assets/images/Logo.png";
+import Logo from "../Assets/images/ARAK_DARK_BACK.png";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import veactor3 from "../Assets/images/Vector3.png";
@@ -24,7 +24,7 @@ const FooterComponent = () => {
       <div className="flex justify-center text-center mt-5">
         <nav className="flex gap-7 text-white">
           <Link to="/about" className="hover:underline">
-            Privacy Policy
+            Who Are WE
           </Link>
           <a href="#contact-us" className="hover:underline">
             Contact With Us
@@ -49,7 +49,7 @@ const FooterComponent = () => {
       <div className="flex justify-center text-center mt-2">
         <div className="text-white hover:bg-blue-950 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
           <FaLocationDot className="text-white w-4 h-4 me-2" />
-          Innsbruker Straße 19, 6300, Wörgl
+          Syria , Damasucs
         </div>
 
         {/* <div className="text-white hover:bg-blue-950 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">

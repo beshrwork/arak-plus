@@ -139,76 +139,44 @@ const ContactForm = () => {
       >
         {/* Form Content */}
         <div className="rounded-lg z-10">
-          <h2 className="text-xl font-bold mb-2">Contact us</h2>
-          <p className="text-sm text-gray-500 mb-6">
-            “If you need help or have any questions, we are here to serve you!”
+            <h2 className="text-xl font-bold mb-4 text-right">تواصل معنا</h2>
+          <p className="text-sm text-gray-500 mb-6" dir="rtl">
+            “إذا كنت بحاجة إلى مساعدة أو لديك أي استفسار، نحن هنا لخدمتك!”
           </p>
+          <form dir="rtl" className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
 
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            {/* Name Input */}
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm mt-1 font-medium text-gray-700"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                required
-              />
-            </div>
+            <label htmlFor="name" className="block mb-1 text-right font-medium">الاسم الكامل</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="أدخل اسمك الكامل"
+              className="w-full mb-4 p-2 border rounded-md text-right"
+            />
 
-            {/* Email Input */}
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium mt-1 text-gray-700"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                required
-              />
-            </div>
+            <label htmlFor="email" className="block mb-1 text-right font-medium">البريد الإلكتروني</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="أدخل بريدك الإلكتروني"
+              className="w-full mb-4 p-2 border rounded-md text-right"
+            />
 
-            {/* Message Field */}
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium mt-1 text-gray-700"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={3}
-                placeholder="Type your message"
-                className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                required
-              ></textarea>
-            </div>
+            <label htmlFor="message" className="block mb-1 text-right font-medium">رسالتك</label>
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              placeholder="اكتب رسالتك هنا..."
+              className="w-full mb-4 p-2 border rounded-md text-right"
+            ></textarea>
 
-            {/* Submit Button */}
-            <div>
-              <button
-                type="submit"
-                className="w-full mt-2 rounded-md bg-purple-600 px-4 py-2 text-white shadow-md hover:bg-purple-700 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
-              >
-                Send
-              </button>
-            </div>
+            <button type="submit" className="bg-[#298883] text-white py-2 px-4 rounded-md w-full">
+              إرسال
+            </button>
           </form>
+
         </div>
       </div>
 
