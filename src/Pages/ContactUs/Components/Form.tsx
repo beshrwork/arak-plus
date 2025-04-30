@@ -112,21 +112,21 @@ import waveImage from "../../../Assets/images/wave.png";
 import arrowImage from "../../../Assets/images/triangle.png";
 
 const ContactForm = () => {
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
+  // const handleSubmit = (event: React.FormEvent) => {
+  //   event.preventDefault();
 
-    const form = event.target as HTMLFormElement;
-    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
-    //const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
-      .value;
+  //   const form = event.target as HTMLFormElement;
+  //   const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+  //   //const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+  //   const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
+  //     .value;
 
-    const mailtoLink = `mailto:smarTmiediea@gmail.com?subject=${encodeURIComponent(
-      name
-    )}&body=${encodeURIComponent(`${message}\n`)}`;
+  //   const mailtoLink = `mailto:smarTmiediea@gmail.com?subject=${encodeURIComponent(
+  //     name
+  //   )}&body=${encodeURIComponent(`${message}\n`)}`;
 
-    window.location.href = mailtoLink;
-  };
+  //   window.location.href = mailtoLink;
+  // };
 
   return (
     <div className="grid md:grid-cols-1 lg:grid-cols-2 items-center justify-center min-h-screen sm:grid-cols-1 bg-white p-4">
