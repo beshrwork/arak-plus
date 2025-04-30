@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo2 from "../../../Assets/images/Logo2.png";
-import Logo3 from "../../../Assets/images/Logo3.png";
+import Logo3 from "../../../Assets/images/ARAK_DARK_BACK.png";
+import Logo2 from "../../../Assets/images/ARAK_WHITE_BACK.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +47,7 @@ const Header = () => {
           </button>
           <div className="text-white text-2xl font-bold">
             <Link to="/">
+            
               <img
                 src={`${isScrolled ? Logo2 : Logo3}`}
                 className="w-20"
@@ -61,27 +62,6 @@ const Header = () => {
               isScrolled ? "text-black" : "text-white"
             } sm:bg-transparent sm:gap-7 sm:translate-y-0`}
           >
-            <Link
-              to="/about"
-              className="block sm:inline hover:underline py-2 sm:py-0"
-              onClick={() => setIsOpen(false)}
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms"
-              className="block sm:inline hover:underline py-2 sm:py-0"
-              onClick={() => setIsOpen(false)}
-            >
-             Terms of Service
-            </Link>
-            <a
-              href="#contact-us"
-              className="block sm:inline hover:underline py-2 sm:py-0"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact With Us
-            </a>
             <a
               href="#our-services"
               className="block sm:inline hover:underline py-2 sm:py-0"
@@ -91,14 +71,7 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Login Button */}
-          <button
-            className={`${
-              isScrolled ? "bg-[#B238E1] text-white" : "bg-white text-black"
-            } font-medium w-24 px-4 py-2 rounded-3xl`}
-          >
-            Log In
-          </button>
+          
         </header>
       </div>
 

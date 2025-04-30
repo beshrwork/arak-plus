@@ -1,9 +1,6 @@
-import googleApp from "../Assets/images/googleplay.png";
-import appStore from "../Assets/images/appStore.png";
 import Logo from "../Assets/images/Logo.png";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
-import { FiPhone } from "react-icons/fi";
 import veactor3 from "../Assets/images/Vector3.png";
 import veactor4 from "../Assets/images/Vector4.png";
 import { Link } from "react-router-dom";
@@ -18,14 +15,7 @@ const FooterComponent = () => {
           className="absolute -mt-12 right-[430px] max-w-sm pointer-events-none"
         />
       </div>
-      <header className="flex justify-center items-center gap-4 bg-transparent text-white">
-        <a href="#">
-          <img src={appStore} alt="App Store" className="w-32" />
-        </a>
-        <a href="#">
-          <img src={googleApp} alt="Google Play" className="w-32" />
-        </a>
-      </header>
+      
 
       <div className="flex justify-center text-center mt-16">
         <img src={Logo} className="w-14" />
@@ -62,10 +52,10 @@ const FooterComponent = () => {
           Innsbruker Straße 19, 6300, Wörgl
         </div>
 
-        <div className="text-white hover:bg-blue-950 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
+        {/* <div className="text-white hover:bg-blue-950 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
           <FiPhone className="text-white w-4 h-4 me-2" />
           00436602923444
-        </div>
+        </div> */}
       </div>
 
       <div className="h-16"></div>

@@ -5,7 +5,6 @@ import Footer from "./Components/Footer";
 import ServicesPage from "../Service/Service";
 import ContactUsPage from "../ContactUs/ContactUsPage";
 import CustomerPage from "../Customer/CustomerPage";
-import MobilePage from "../Mobile/MobilePage";
 import FooterComponent from "../../Components/Footer";
 import veactor1 from "../../Assets/images/Vector1.png";
 import veactor2 from "../../Assets/images/Vector2.png";
@@ -73,9 +72,9 @@ const HomePage = () => {
       </div>
 
       <div className="mt-20 rounded-full" ref={mobileRef}>
-        <div>
+        {/* <div>
           <MobilePage />
-        </div>
+        </div> */}
       </div>
 
       <div className="">
